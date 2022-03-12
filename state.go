@@ -8,6 +8,8 @@ func main() {
 
 	strings = append(strings, "Golang Developer")
 
+
+
 	for i, string := range strings {
 		println(i, string)
 	}
