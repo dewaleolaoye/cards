@@ -1,27 +1,32 @@
 package main
 
+import "fmt"
+
+type Person struct {
+	name string
+	age int
+}
+
+func (p Person) print() {
+	fmt.Printf("%s is of %d years old\n", p.name, p.age)
+}
+
 func main() {
 
-	// var wale = [4]int {1, 2, 4, 5}
-
-	strings := []string {"Hello", "Adewale Olaoye", "Playing with go"}
-
-	strings = append(strings, "Golang Developer")
-
-
-
-	for i, string := range strings {
-		println(i, string)
-	}
-
-	// fmt.Println(wale, "Wale")
-
-
-	// println(strings)
-	// strings := "Hello, what's new here?"
+	// strings := []string {"Hello", "Adewale Olaoye", "Playing with go"}
+	// strings = append(strings, "Golang Developer")
 
 	// for i, string := range strings {
-	// 	fmt.Println(i, string)
+	// 	println(i, string)
 	// }
+
+	wale := Person {
+		name: "Adewale Olaoye",
+		age: 45,
+	}
+
+	wale.print()
+
+	// fmt.Println(wale)
 
 }
